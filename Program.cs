@@ -1,4 +1,5 @@
-﻿using RoXMX.Utilities;
+﻿using RobloxFiles;
+using RoXMX.Utilities;
 using System;
 using System.Windows.Forms;
 
@@ -27,7 +28,12 @@ namespace RoXMX
             else
             {
                 Logger.Info("No file selected.");
+                Process.Exit(1);
             }
+
+            RobloxFile file = RobloxFile.Open($@"{openFileDialog.FileName}");
+
+            Console.Write(file);
 
             Process.Exit(0);
         }
