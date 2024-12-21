@@ -1,5 +1,5 @@
 ﻿// Auto-generated list of Roblox enums.
-// Updated as of 0.616.0.6160656
+// Updated as of 0.654.2.6540482
 
 namespace RobloxFiles.Enums
 {
@@ -111,6 +111,27 @@ namespace RobloxFiles.Enums
         Enabled
     }
 
+    public enum AudioFilterType
+    {
+        Peak,
+        LowShelf,
+        HighShelf,
+        Lowpass12dB,
+        Lowpass24dB,
+        Lowpass48dB,
+        Highpass12dB,
+        Highpass24dB,
+        Highpass48dB,
+        Bandpass,
+        Notch
+    }
+
+    public enum AudioSimulationFidelity
+    {
+        None,
+        Automatic
+    }
+
     public enum AudioSubType
     {
         Music = 1,
@@ -123,13 +144,6 @@ namespace RobloxFiles.Enums
         X,
         Y,
         XY
-    }
-
-    public enum AvatarJointUpgrade
-    {
-        Default,
-        Enabled,
-        Disabled
     }
 
     public enum AvatarUnificationMode
@@ -182,13 +196,6 @@ namespace RobloxFiles.Enums
         RobloxRoundDropdownButton
     }
 
-    public enum CSGAsyncDynamicCollision
-    {
-        Default,
-        Disabled,
-        Experimental
-    }
-
     public enum CameraMode
     {
         Classic,
@@ -226,14 +233,6 @@ namespace RobloxFiles.Enums
         Default,
         Disabled,
         Enabled
-    }
-
-    public enum DeathStyle
-    {
-        Default,
-        ClassicBreakApart,
-        NonGraphic,
-        Scriptable
     }
 
     public enum DevCameraOcclusionMode
@@ -353,13 +352,6 @@ namespace RobloxFiles.Enums
         Cubic
     }
 
-    public enum EditorLiveScripting
-    {
-        Default,
-        Disabled,
-        Enabled
-    }
-
     public enum ElasticBehavior
     {
         WhenScrollable,
@@ -451,6 +443,8 @@ namespace RobloxFiles.Enums
         BuilderSansMedium,
         BuilderSansBold,
         BuilderSansExtraBold,
+        Arimo,
+        ArimoBold,
         Unknown = 100
     }
 
@@ -530,6 +524,15 @@ namespace RobloxFiles.Enums
         Movement
     }
 
+    public enum HapticEffectType
+    {
+        UIHover = 1,
+        UIClick,
+        UINotification,
+        GameplayExplosion,
+        GameplayCollision
+    }
+
     public enum HighlightDepthMode
     {
         AlwaysOnTop,
@@ -596,13 +599,6 @@ namespace RobloxFiles.Enums
         NoInput,
         Constant = 12,
         Sin
-    }
-
-    public enum InterpolationThrottlingMode
-    {
-        Default,
-        Disabled,
-        Enabled
     }
 
     public enum ItemLineAlignment
@@ -869,7 +865,14 @@ namespace RobloxFiles.Enums
         DPadUp,
         DPadDown,
         Thumbstick1,
-        Thumbstick2
+        Thumbstick2,
+        MouseLeftButton,
+        MouseRightButton,
+        MouseMiddleButton,
+        MouseBackButton,
+        MouseNoButton,
+        MouseX,
+        MouseY
     }
 
     public enum LeftRight
@@ -879,11 +882,25 @@ namespace RobloxFiles.Enums
         Right
     }
 
+    public enum LightingStyle
+    {
+        Realistic,
+        Soft
+    }
+
     public enum LineJoinMode
     {
         Round,
         Bevel,
         Miter
+    }
+
+    public enum ListenerLocation
+    {
+        Default,
+        None,
+        Character,
+        Camera
     }
 
     public enum LoadCharacterLayeredClothing
@@ -1008,6 +1025,13 @@ namespace RobloxFiles.Enums
         LockCurrentPosition
     }
 
+    public enum MoverConstraintRootBehaviorMode
+    {
+        Default,
+        Disabled,
+        Enabled
+    }
+
     public enum NameOcclusion
     {
         NoOcclusion,
@@ -1085,6 +1109,13 @@ namespace RobloxFiles.Enums
         VelocityPerpendicular
     }
 
+    public enum PathfindingUseImprovedSearch
+    {
+        Default,
+        Disabled,
+        Enabled
+    }
+
     public enum PhysicsSteppingMethod
     {
         Default,
@@ -1112,7 +1143,8 @@ namespace RobloxFiles.Enums
         Constant,
         Elastic,
         Cubic,
-        Bounce
+        Bounce,
+        CubicV2
     }
 
     public enum PositionAlignmentMode
@@ -1159,6 +1191,13 @@ namespace RobloxFiles.Enums
         Automatic,
         Precise,
         Performance
+    }
+
+    public enum RenderingCacheOptimizationMode
+    {
+        Default,
+        Disabled,
+        Enabled
     }
 
     public enum RenderingTestComparisonMethod
@@ -1216,6 +1255,13 @@ namespace RobloxFiles.Enums
         InverseTapered
     }
 
+    public enum RolloutState
+    {
+        Default,
+        Disabled,
+        Enabled
+    }
+
     public enum RotationOrder
     {
         XYZ,
@@ -1245,6 +1291,12 @@ namespace RobloxFiles.Enums
     {
         None,
         FullscreenExtension
+    }
+
+    public enum SandboxedInstanceMode
+    {
+        Default,
+        Experimental
     }
 
     public enum ScaleType
@@ -1396,7 +1448,8 @@ namespace RobloxFiles.Enums
         Voxel,
         Compatibility,
         ShadowMap,
-        Future
+        Future,
+        Unified
     }
 
     public enum TerrainAcquisitionMethod
@@ -1432,7 +1485,8 @@ namespace RobloxFiles.Enums
     public enum TextTruncate
     {
         None,
-        AtEnd
+        AtEnd,
+        SplitWord
     }
 
     public enum TextXAlignment
@@ -1456,6 +1510,12 @@ namespace RobloxFiles.Enums
         Static
     }
 
+    public enum TonemapperPreset
+    {
+        Default,
+        Retro
+    }
+
     public enum TopBottom
     {
         Top,
@@ -1468,6 +1528,49 @@ namespace RobloxFiles.Enums
         Unknown,
         True,
         False
+    }
+
+    public enum UIDragDetectorBoundingBehavior
+    {
+        Automatic,
+        EntireObject,
+        HitPoint
+    }
+
+    public enum UIDragDetectorDragRelativity
+    {
+        Absolute,
+        Relative
+    }
+
+    public enum UIDragDetectorDragSpace
+    {
+        Parent,
+        LayerCollector,
+        Reference
+    }
+
+    public enum UIDragDetectorDragStyle
+    {
+        TranslatePlane,
+        TranslateLine,
+        Rotate,
+        Scriptable
+    }
+
+    public enum UIDragDetectorResponseStyle
+    {
+        Offset,
+        Scale,
+        CustomOffset,
+        CustomScale
+    }
+
+    public enum UIDragSpeedAxisMapping
+    {
+        XY,
+        XX,
+        YY
     }
 
     public enum UIFlexAlignment
@@ -1486,6 +1589,19 @@ namespace RobloxFiles.Enums
         Shrink,
         Fill,
         Custom
+    }
+
+    public enum VRControllerModelMode
+    {
+        Disabled,
+        Transparent
+    }
+
+    public enum VRLaserPointerMode
+    {
+        Disabled,
+        Pointer,
+        DualPointer
     }
 
     public enum VRScaling

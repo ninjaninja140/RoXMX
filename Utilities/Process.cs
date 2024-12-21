@@ -7,6 +7,7 @@ namespace RoXMX.Utilities
     {
         public static void Exit(int exitCode)
         {
+            Console.WriteLine();
             Logger.Info("Press ENTER to Close RoXMX.");
             Console.ReadLine();
             Logger.Info("Exiting...");

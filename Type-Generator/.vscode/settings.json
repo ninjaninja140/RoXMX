@@ -1,0 +1,6 @@
+{
+	"[lua]": {
+		"editor.defaultFormatter": "Kampfkarren.selene-vscode",
+		"editor.formatOnSave": true
+	}
+}
